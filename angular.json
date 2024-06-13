@@ -22,7 +22,7 @@
             "styles": [
               "src/primeng-themes/themes/vaudoise/vaudoise.scss",
               "node_modules/primeng/resources/primeng.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },

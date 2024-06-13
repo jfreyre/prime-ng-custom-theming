@@ -1,0 +1,72 @@
+<form [formGroup]="formulaire" (ngSubmit)="onSubmit()" class="container mt-4">
+    <div class="form-group row mb1">
+      <label for="texte" class="col-sm-2 col-form-label">Texte</label>
+      <div class="col-sm-10">
+        <input type="text" pInputText formControlName="texte" />
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="date" class="col-sm-2 col-form-label">Date</label>
+      <div class="col-sm-10">
+        <p-calendar id="date" formControlName="date" class="form-control"></p-calendar>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+      <div class="col-sm-10">
+        <p-inputNumber id="nombre" formControlName="nombre" class="form-control"></p-inputNumber>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="selection" class="col-sm-2 col-form-label">Sélection</label>
+      <div class="col-sm-10">
+        <p-dropdown id="selection" formControlName="selection" [options]="options" class="form-control"></p-dropdown>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="multiSelection" class="col-sm-2 col-form-label">Multi-sélection</label>
+      <div class="col-sm-10">
+        <p-multiSelect id="multiSelection" formControlName="multiSelection" [options]="options" class="form-control"></p-multiSelect>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="checkbox" class="col-sm-2 col-form-label">Checkbox</label>
+      <div class="col-sm-10">
+        <p-checkbox id="checkbox" formControlName="checkbox" binary="true"></p-checkbox>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Radio</label>
+      <div class="col-sm-10">
+        <p-radioButton formControlName="radio" [value]="true" label="Oui" class="form-check-input"></p-radioButton>
+        <p-radioButton formControlName="radio" [value]="false" label="Non" class="form-check-input"></p-radioButton>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="toggle" class="col-sm-2 col-form-label">Toggle</label>
+      <div class="col-sm-10">
+        <p-toggleButton id="toggle" formControlName="toggle" class="form-control"></p-toggleButton>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="slider" class="col-sm-2 col-form-label">Slider</label>
+      <div class="col-sm-10">
+        <p-slider id="slider" formControlName="slider" styleClass="form-control"></p-slider>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <div class="col-sm-10 offset-sm-2">
+        <button pButton type="submit" label="Soumettre" class="btn btn-primary"></button>
+      </div>
+    </div>
+  </form>
+  
